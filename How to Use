@@ -1,0 +1,23 @@
+# Make the script executable
+chmod +x run-ansible-with-log.sh
+
+# Run any playbook - automatically creates organized structure
+./run-ansible-with-log.sh playbook.yml
+
+# Run with custom inventory
+./run-ansible-with-log.sh cmd.yml inventory.ini
+
+# Run with extra args
+./run-ansible-with-log.sh playbook.yml inventory.ini --check
+
+# View the master index
+cat logs/INDEX.md
+
+# View latest log for a specific playbook
+tail -f logs/playbook/latest.log
+
+# List all playbook directories
+ls -la logs/
+
+# View report for last run of a playbook
+cat logs/cmd/latest-report.txt
