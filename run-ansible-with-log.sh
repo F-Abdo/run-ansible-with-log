@@ -20,7 +20,7 @@ usage() {
     echo "Usage: $0 <playbook.yml> [inventory.ini] [options]"
     echo ""
     echo "Examples:"
-    echo "  $0 os_test.yml inventory.ini --check"
+    echo "  playbook.yml inventory.ini --check"
     echo ""
     exit 1
 }
