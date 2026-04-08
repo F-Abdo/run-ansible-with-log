@@ -1,0 +1,18 @@
+logs/
+├── INDEX.md                          # Master index of all playbooks
+│
+├── gather-users-groups/              # Playbook-specific directory
+│   ├── runs/
+│   │   ├── playbook_(date).log
+│   ├── reports/
+│   │   ├── report_(date).txt
+│   ├── backups/
+│   │   └──playbook__(date).yml
+│   ├── latest.log -> runs/playbook__(date).log
+│
+└── Profil_Anpassen/                  # Profile customization logs
+    ├── runs/
+    ├── reports/
+    ├── backups/
+    ├── latest.log
+    └── latest-report.txt
